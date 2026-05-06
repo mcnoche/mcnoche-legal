@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMS Consent &amp; Call to Action — McKnight Notification Service</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 40px 48px;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.1rem; margin-top: 32px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    p, li { line-height: 1.7; font-size: 0.97rem; }
+    ul { padding-left: 22px; }
+    .meta { color: #666; font-size: 0.85rem; margin-top: 2px; margin-bottom: 28px; }
+    a { color: #1a73e8; }
+    .sample {
+      background: #f4f6f9;
+      border-left: 3px solid #1a73e8;
+      padding: 10px 14px;
+      margin: 8px 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9rem;
+      white-space: pre-wrap;
+    }
+    footer { margin-top: 40px; font-size: 0.8rem; color: #999; border-top: 1px solid #eee; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SMS Consent &amp; Call to Action</h1>
+    <p class="meta">
+      Service: McKnight Notification Service<br />
+      Operator: Mike McKnight, Sole Proprietor<br />
+      Effective Date: May 6, 2026<br />
+      Last Updated: May 6, 2026
+    </p>
+
+    <h2>1. Program Overview</h2>
+    <p>
+      The <strong>McKnight Notification Service</strong> ("Service", "Program") is a private,
+      personal SMS notification system operated by Mike McKnight as a sole proprietor. The Service
+      sends transactional system alerts via <a href="https://www.twilio.com" target="_blank" rel="noopener">Twilio</a>
+      to a single, pre-configured mobile phone number that belongs to the Operator.
+    </p>
+    <p>
+      The Service is not a consumer-facing product. There is no public sign-up form, no marketing,
+      no third-party recipients, and no resale of messaging capacity.
+    </p>
+
+    <h2>2. Recipient</h2>
+    <p>
+      Messages are delivered to <strong>one recipient only</strong>: the Operator, on a mobile
+      phone number that the Operator personally owns and controls. No other phone numbers are
+      stored or messaged by the Service.
+    </p>
+
+    <h2>3. How Consent Is Obtained (Call to Action)</h2>
+    <p>
+      Because the Service has exactly one recipient — the Operator — consent is obtained by the
+      Operator's own action at the time the Service is deployed:
+    </p>
+    <ul>
+      <li>
+        The Operator manually enters his own mobile phone number into the Service's private
+        configuration (a server-side environment variable) on his own infrastructure.
+      </li>
+      <li>
+        By performing that configuration step, the Operator affirmatively opts in to receive
+        transactional SMS notifications from the Service on the configured number.
+      </li>
+      <li>
+        No other person can opt in, and no other person's phone number can be added — the
+        configuration is private to the Operator's own server and is not exposed to any web form,
+        API, or public interface.
+      </li>
+    </ul>
+    <p>
+      This page documents that consent flow and serves as the publicly accessible Call-to-Action
+      reference for the campaign.
+    </p>
+
+    <h2>4. Message Details</h2>
+    <ul>
+      <li><strong>Message types:</strong> Transactional system notifications only — no marketing,
+          promotional, or advertising content is ever sent.</li>
+      <li><strong>Message frequency:</strong> Varies based on internal application activity. There
+          is no fixed schedule.</li>
+      <li><strong>Charges:</strong> Message and data rates may apply, depending on the Operator's
+          mobile carrier plan.</li>
+      <li><strong>Supported carriers:</strong> Major US carriers. Delivery on all carriers is not
+          guaranteed.</li>
+    </ul>
+
+    <h2>5. Opt-Out and Help</h2>
+    <p>
+      The Operator may opt out at any time:
+    </p>
+    <ul>
+      <li>Reply <strong>STOP</strong> to any message to unsubscribe. One final confirmation
+          message will be sent and no further messages will follow.</li>
+      <li>Reply <strong>HELP</strong> to any message for assistance, or contact the Operator at
+          <a href="mailto:mike@mcknight4.com">mike@mcknight4.com</a>.</li>
+    </ul>
+
+    <h2>6. Sample Messages</h2>
+    <p>Representative examples of the transactional messages sent by the Service:</p>
+    <div class="sample">McKnight Notification Service: Backup job "nightly-photos" completed successfully at 03:14. Reply STOP to opt out, HELP for help. Msg&amp;data rates may apply.</div>
+    <div class="sample">McKnight Notification Service: ALERT — home internet uplink down for 6 minutes. Reply STOP to opt out, HELP for help. Msg&amp;data rates may apply.</div>
+    <div class="sample">McKnight Notification Service: Reply STOP to unsubscribe. Reply HELP for help. Msg&amp;data rates may apply. See https://mcnoche.github.io/mcnoche-legal/ for privacy &amp; terms.</div>
+
+    <h2>7. Privacy and Terms</h2>
+    <p>
+      Mobile opt-in data, phone numbers, and SMS consent information are
+      <strong>not shared with third parties or affiliates for marketing or promotional purposes</strong>.
+      Full disclosures are in the linked documents:
+    </p>
+    <ul>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms &amp; Conditions</a></li>
+    </ul>
+
+    <h2>8. Contact</h2>
+    <p>
+      Questions about this Call-to-Action document or the Service may be directed to:<br />
+      <strong>Mike McKnight</strong><br />
+      Email: <a href="mailto:mike@mcknight4.com">mike@mcknight4.com</a>
+    </p>
+
+    <footer>
+      &copy; 2026 Mike McKnight &mdash; Sole Proprietor &mdash;
+      <a href="index.html">Back to Legal Documents</a>
+    </footer>
+  </div>
+</body>
+</html>
